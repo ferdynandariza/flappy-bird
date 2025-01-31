@@ -1,6 +1,7 @@
 package app;
 
 public class Constant {
+    public static final String GAME_TITLE = "Flappy Bird";
     public static final int BOARD_WIDTH = 360;
     public static final int BOARD_HEIGHT = 640;
 

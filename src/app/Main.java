@@ -4,20 +4,11 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        int boardWidth = 360;
-        int boardHeight = 640;
+        SwingUtilities.invokeLater(Main::createAndShowGame);
+    }
 
-        JFrame frame = new JFrame("Flappy java.Bird");
-
-        frame.setSize(boardWidth, boardHeight);
-        frame.setLocationRelativeTo(null);
-        frame.setResizable(false);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        FlappyBird flappyBird = new FlappyBird();
-        frame.add(flappyBird);
-        frame.pack();
-        flappyBird.requestFocus();
+    private static void createAndShowGame() {
+        JFrame frame = new GameWindow(Constant.GAME_TITLE, Constant.BOARD_WIDTH, Constant.BOARD_HEIGHT);
         frame.setVisible(true);
     }
 }
