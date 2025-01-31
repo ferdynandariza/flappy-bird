@@ -1,4 +1,4 @@
-package app;
+package io.github.ferdynandariza.flappybird.constant;
 
 public class Constant {
     public static final String GAME_TITLE = "Flappy Bird";

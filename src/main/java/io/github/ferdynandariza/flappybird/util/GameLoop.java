@@ -1,4 +1,7 @@
-package app;
+package io.github.ferdynandariza.flappybird.util;
+
+import io.github.ferdynandariza.flappybird.constant.Constant;
+import io.github.ferdynandariza.flappybird.runner.FlappyBird;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

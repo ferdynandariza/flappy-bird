@@ -1,4 +1,4 @@
-package app;
+package io.github.ferdynandariza.flappybird.model;
 
 public class GameState {
     private final Double score;

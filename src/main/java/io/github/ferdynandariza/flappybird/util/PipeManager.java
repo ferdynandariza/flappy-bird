@@ -1,4 +1,10 @@
-package app;
+package io.github.ferdynandariza.flappybird.util;
+
+import io.github.ferdynandariza.flappybird.constant.Constant;
+import io.github.ferdynandariza.flappybird.constant.ResourcePath;
+import io.github.ferdynandariza.flappybird.runner.FlappyBird;
+import io.github.ferdynandariza.flappybird.model.Bird;
+import io.github.ferdynandariza.flappybird.model.Pipe;
 
 import javax.swing.*;
 import java.awt.*;
@@ -7,9 +13,9 @@ import java.util.ArrayList;
 public class PipeManager {
 
     private final Timer pipesTimer;
-    private final Image TOP_PIPE_IMAGE = new ImageIcon(getClass().getResource("../resources/top-pipe.png")).getImage();
+    private final Image TOP_PIPE_IMAGE = new ImageIcon(getClass().getResource(ResourcePath.TOP_PIPE)).getImage();
 
-    private final Image BOTTOM_PIPE_IMAGE = new ImageIcon(getClass().getResource("../resources/bottom-pipe.png")).getImage();
+    private final Image BOTTOM_PIPE_IMAGE = new ImageIcon(getClass().getResource(ResourcePath.BOTTOM_PIPE)).getImage();
 
     private final ArrayList<Pipe> pipes = new ArrayList<>();
     private int pipeVelocity = -4;

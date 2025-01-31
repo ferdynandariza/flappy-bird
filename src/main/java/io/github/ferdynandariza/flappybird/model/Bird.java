@@ -1,4 +1,7 @@
-package app;
+package io.github.ferdynandariza.flappybird.model;
+
+import io.github.ferdynandariza.flappybird.constant.Constant;
+import io.github.ferdynandariza.flappybird.constant.ResourcePath;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,7 +15,7 @@ public class Bird {
     private int velocityY = 0;
 
     public Bird() {
-       this.image = new ImageIcon(getClass().getResource("../resources/flappy-bird.png")).getImage();
+       this.image = new ImageIcon(getClass().getResource(ResourcePath.FLAPPY_BIRD)).getImage();
     }
 
     public void move() {

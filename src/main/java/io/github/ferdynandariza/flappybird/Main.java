@@ -1,4 +1,7 @@
-package app;
+package io.github.ferdynandariza.flappybird;
+
+import io.github.ferdynandariza.flappybird.constant.Constant;
+import io.github.ferdynandariza.flappybird.util.GameWindow;
 
 import javax.swing.*;
 

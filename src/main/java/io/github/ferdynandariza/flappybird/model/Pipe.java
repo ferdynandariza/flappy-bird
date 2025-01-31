@@ -1,4 +1,6 @@
-package app;
+package io.github.ferdynandariza.flappybird.model;
+
+import io.github.ferdynandariza.flappybird.constant.Constant;
 
 import java.awt.*;
 
@@ -34,16 +36,8 @@ public class Pipe {
         return width;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
     public int getHeight() {
         return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
     }
 
     public Image getImage() {

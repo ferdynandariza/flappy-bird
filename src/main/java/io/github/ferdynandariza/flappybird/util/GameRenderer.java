@@ -1,4 +1,8 @@
-package app;
+package io.github.ferdynandariza.flappybird.util;
+
+import io.github.ferdynandariza.flappybird.constant.Constant;
+import io.github.ferdynandariza.flappybird.constant.ResourcePath;
+import io.github.ferdynandariza.flappybird.model.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,15 +10,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Renderer {
+public class GameRenderer {
 
-    private final Image BACKGROUND_IMAGE = new ImageIcon(getClass().getResource("../resources/background.png")).getImage();
+    private final Image BACKGROUND_IMAGE = new ImageIcon(getClass().getResource(ResourcePath.BACKGROUND)).getImage();
 
     private final Bird bird;
     private final ArrayList<Pipe> pipes;
     private GameState state;
 
-    public Renderer(
+    public GameRenderer(
             Bird bird,
             ArrayList<Pipe> pipes,
             GameState state
@@ -65,7 +69,7 @@ public class Renderer {
 
     private Font getCustomFont(float size) {
         try {
-            return Font.createFont(Font.TRUETYPE_FONT, new File("src/resources/font/retro-gaming.ttf"))
+            return Font.createFont(Font.TRUETYPE_FONT, new File(ResourcePath.MAIN_FONT))
                     .deriveFont(size);
         } catch (IOException | FontFormatException e) {
             return new Font("SansSerif", Font.BOLD, (int) size);

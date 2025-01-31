@@ -1,4 +1,8 @@
-package app;
+package io.github.ferdynandariza.flappybird.util;
+
+import io.github.ferdynandariza.flappybird.constant.Constant;
+import io.github.ferdynandariza.flappybird.model.Bird;
+import io.github.ferdynandariza.flappybird.model.Pipe;
 
 import java.util.ArrayList;
 
