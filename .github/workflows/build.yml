@@ -1,0 +1,30 @@
+name: Build JAR
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '23'
+
+      - name: Build JAR with Maven
+        run: mvn clean package
+
+      - name: Upload JAR Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: flappy-bird-jar
+          path: target/*.jar
